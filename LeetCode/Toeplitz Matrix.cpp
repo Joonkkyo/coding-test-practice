@@ -1,8 +1,8 @@
 class Solution {
 public:
     bool isToeplitzMatrix(vector<vector<int>>& matrix) {
-        int M = matrix.size(); // Çà
-        int N = matrix[0].size(); // ¿­
+        int M = matrix.size(); // í–‰
+        int N = matrix[0].size(); // 
         int idx;
 
         if (M == 1 || N == 1)
