@@ -21,6 +21,7 @@ public:
         for (int i = 3; i < size; i++)
             dp[i] = max(dp[i - 2], dp[i - 3]) + nums[i];
         answer = max(dp[size - 1], dp[size - 2]);
+       
         return answer;
     }
 };
