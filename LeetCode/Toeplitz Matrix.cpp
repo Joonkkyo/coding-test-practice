@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isToeplitzMatrix(vector<vector<int>>& matrix) {
         int M = matrix.size(); // 행
-        int N = matrix[0].size(); // 
+        int N = matrix[0].size(); // 열
         int idx;
 
         if (M == 1 || N == 1)
