@@ -36,5 +36,6 @@ bool solution(vector<string> phone_book) {
             break;
         }
     }
+    
     return answer;
 }
