@@ -26,5 +26,6 @@ string solution(string number, int k)
 		cnt++;
 		max = 0;
 	}
+	
 	return answer;
 }
