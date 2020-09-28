@@ -63,6 +63,5 @@ int main(void)
 				cout << queue[rear - 1] << endl;
 		}
 	}
-
 	return 0;
 }
