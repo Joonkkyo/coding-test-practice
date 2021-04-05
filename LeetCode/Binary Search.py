@@ -17,4 +17,5 @@ class Solution(object):
                 end = mid - 1
             else:
                 start = mid + 1
-        return -1 
+        return -1  // 탐색 실패
+ 
