@@ -12,6 +12,9 @@ print("앞서 적은 원소 개수만큼 문자열 입력")
 array = input().split()
 
 print(sequential_search(n, target, array))
+
+## 입력
 ## 5 hi
 ## ae ba ce db hi
-## 결과 : 5
+## 출력
+## 5
