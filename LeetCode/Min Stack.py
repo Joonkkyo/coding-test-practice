@@ -9,9 +9,9 @@ class MinStack:
 
     def push(self, val: int) -> None:
         if self.stack:
-            self.stack.append((x, min(x, self.stack[-1, 1])))  # 최솟값 기록하면서 스택에 저장
+            self.stack.append((val, min(val, self.stack[-1][1]))) # 최솟값 기록하며 스택에 저장
         else:
-            self.stack.append((x, x))
+            self.stack.append((val, val))
             
     def pop(self) -> None:
         if self.stack:
@@ -22,7 +22,8 @@ class MinStack:
             return self.stack[-1][0]
 
     def getMin(self) -> int:
-        return min(self.stack)
+        if self.stack:
+            return self.stack[-1][1]
 
 
 # Your MinStack object will be instantiated and called as such:
