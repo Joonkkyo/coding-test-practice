@@ -6,21 +6,24 @@ class MinStack:
         """
         self.stack = []
         
-
+        
     def push(self, val: int) -> None:
         if self.stack:
             self.stack.append((val, min(val, self.stack[-1][1]))) # 최솟값 기록하며 스택에 저장
         else:
             self.stack.append((val, val))
             
+            
     def pop(self) -> None:
         if self.stack:
             self.stack.pop()
 
+            
     def top(self) -> int:
         if self.stack:
             return self.stack[-1][0]
 
+        
     def getMin(self) -> int:
         if self.stack:
             return self.stack[-1][1]
