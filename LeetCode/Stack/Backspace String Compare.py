@@ -23,6 +23,7 @@ class Solution:
             else:
                 stack_t.append(ch)
                 
+                
         ans_s = ''.join(map(str, stack_s))
         ans_t = ''.join(map(str, stack_t))
 
