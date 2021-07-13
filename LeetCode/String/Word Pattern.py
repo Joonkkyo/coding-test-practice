@@ -23,4 +23,3 @@ class Solution:
                 pattern_arr_2.append(lookup_2[ch])
                 
         return True if pattern_arr_1 == pattern_arr_2 else False
-    
