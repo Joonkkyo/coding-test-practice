@@ -11,7 +11,7 @@ class Solution:
 
         for i in range(8):
             y, x = king[0], king[1]
-            for j in range(8):
+            for _ in range(8):
                 next_y = y + dy[i]
                 next_x = x + dx[i]
                 
