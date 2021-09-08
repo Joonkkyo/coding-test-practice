@@ -2,8 +2,7 @@ class Solution:
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
         obstacles = set((x, y) for x, y in obstacles)
         dx = [0, -1, 0, 1] # 북 서 남 동
-        dy = [1, 0, -1, 0]
-        
+        dy = [1, 0, -1, 0] 
         direction = 0
         max_distance = 0
         x, y = 0, 0
