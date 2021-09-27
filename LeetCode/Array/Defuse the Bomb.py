@@ -19,4 +19,3 @@ class Solution:
                 answer.append(0)
         return answer
                 
-        
