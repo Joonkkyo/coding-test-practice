@@ -11,3 +11,4 @@ for _ in range(N):
         else: print(0)
     else:
         heapq.heappush(heap, num)
+        
