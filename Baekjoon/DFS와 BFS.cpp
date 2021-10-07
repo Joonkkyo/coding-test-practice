@@ -37,7 +37,7 @@ void bfs(int v) {
 int main() {
 	int x, y;
 		cin >> N >> M >> V;  //N은 노드개수, M은 간선의개수, V는 처음 위치의 기준이 되는 노드
-	for (int i = 0; i<M; i++) {  //간선의 개수만큼 서로 이어줄 x와 y노드를 입력받습니다.
+	for (int i = 0; i < M; i++) {  //간선의 개수만큼 서로 이어줄 x와 y노드를 입력받습니다.
 		cin >> x >> y;
 		adj[x][y] = adj[y][x] = 1;  //인접행렬 표시
 	}
