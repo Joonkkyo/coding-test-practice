@@ -15,7 +15,6 @@ class Solution:
         
         while queue:
             node, depth = queue.pop(0) 
-            print(node.val)
             for child in node.children:
                 queue.append((child, depth + 1))
      
