@@ -26,4 +26,3 @@ for i in range(N):
                     queue.append((ny, nx))
                     
     print(board[target_y][target_x])
-    print(board)
