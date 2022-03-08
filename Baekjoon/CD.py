@@ -12,4 +12,19 @@ while True:
     for _ in range(M):
         CD2.append(int(sys.stdin.readline()))
     
-    print(len(set(CD1) & set(CD2)))
+    idx_1, idx_2 = 0, 0
+    answer = 0
+    
+    while idx_1 != N and idx_2 != M:   
+        if CD1[idx_1] == CD2[idx_2]:
+            idx_1 += 1
+            idx_2 += 1
+            answer += 1
+        
+        elif CD1[idx_1] < CD2[idx_2]:
+            idx_1 += 1
+            
+        else:
+            idx_2 += 1
+            
+    print(answer)
