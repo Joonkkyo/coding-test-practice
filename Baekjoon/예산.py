@@ -3,7 +3,6 @@ budgets = list(map(int, input().split()))
 M = int(input())
 
 start, end = 0, max(budgets)
-answer = 0
 while start <= end:
     mid = (start + end) // 2
     total = 0
@@ -18,6 +17,5 @@ while start <= end:
         end = mid - 1
     else:
         start = mid + 1
-        answer = max(answer, total)
         
 print(end)
