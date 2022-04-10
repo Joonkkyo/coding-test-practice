@@ -3,7 +3,6 @@ str2 = input()
 
 row, col = len(str1), len(str2)
 dp = [[0] * col for _ in range(row)]
-
 flag = False
 for i in range(row):
     if flag: 
@@ -31,5 +30,4 @@ for i in range(1, row):
         else:
             dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
 
-                    
 print(dp[row - 1][col - 1])
