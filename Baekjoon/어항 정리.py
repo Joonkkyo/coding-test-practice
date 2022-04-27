@@ -98,7 +98,7 @@ for i in range(N):
     board[0][i] = fishes[i]
     
 answer = 0
-while True:
+while max(board[0]) - min(board[0]) > K:
     add_fish()
     fish_move_1()
     adjust_fish()
@@ -107,7 +107,5 @@ while True:
     adjust_fish()
     make_1D()
     answer += 1
-    if max(board[0]) - min(board[0]) <= K:
-        break
     
 print(answer)
