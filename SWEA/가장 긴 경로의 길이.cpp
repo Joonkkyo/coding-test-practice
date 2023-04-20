@@ -49,8 +49,8 @@ int main(void)
 			int to = temp[i + 1]; 
 			graph[from][to] = 1;
 		}
-    
-    delete[] temp;
+		
+		delete[] temp;
 	}
 
 	for (int i = 1; i <= V; i++)
