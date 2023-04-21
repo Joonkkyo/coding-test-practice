@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+long long dp[15];
+
+int main(void)
+{
+	ios::sync_with_stdio(false); 
+	cin.tie(NULL);
+	cout.tie(NULL);
+
+	int T;
+	cin >> T;
+	for (int tc = 1; tc <= T; ++tc)
+	{
+		memset(dp, 0, sizeof(dp));
+		int N;
+		cin >> N;
+		dp[1] = 1, dp[2] = 3;
+		for (int i = 3; i <= N; ++i)
+			dp[i] = dp[i - 1] + dp[i - 2] * 2;
+
+		cout << "#" << tc << " " << dp[N] << endl;
+	}
+}
