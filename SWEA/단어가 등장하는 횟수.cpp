@@ -54,7 +54,6 @@ int main(void)
             {
                 if (idx == S.size() - 1)
                 {
-                    cout << idx << endl;
                     answer++;
                     idx = pi[idx];
                 }
